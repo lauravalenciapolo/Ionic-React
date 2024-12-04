@@ -1,0 +1,15 @@
+.container_listProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    align-items: center;
+    height: 100vh;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+    width: 100%;
+}
+.list_favorites {
+    width: 100%;
+}
