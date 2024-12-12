@@ -1,7 +1,7 @@
 import { IonBackButton, IonContent, IonHeader, IonItem, IonPage, IonSelect, IonSelectOption, IonTitle, IonToolbar } from '@ionic/react';
 import './Favorites.css';
 import ListProducts from '../components/ListProducts/ListProducts';
-import { useFavorites } from '../utils/hooks/useFavorites';
+import { useFavorites } from '../utils/context/favoritesContext';
 import { useState, useEffect } from 'react';
 import Product from '../types/productModel';
 
@@ -33,7 +33,6 @@ const Favorites: React.FC = () => {
       <IonHeader>
         <IonToolbar color={'primary'}>
           <IonTitle>Tus favoritos</IonTitle>
-          <IonBackButton defaultHref="/" />
         </IonToolbar>
       </IonHeader>
       <IonContent>

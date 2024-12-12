@@ -3,7 +3,7 @@ import { cartOutline, heart, heartOutline } from 'ionicons/icons';
 import { useState, useEffect } from 'react';
 import './CardsProducts.css';
 import  Product from '../../types/productModel';
-import { useFavorites } from '../../utils/hooks/useFavorites';
+import { useFavorites } from '../../utils/context/favoritesContext';
 
 interface CardsProductsProps {
   products: Product[];
