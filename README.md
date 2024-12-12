@@ -8,5 +8,5 @@ Para ejecutar el proyecto:
 
 Consideraciones:
 - Para el proyecto se realizó una arquitectura MVC (Modelo - Vista - Controlador) 
-- Para manejar el estado de los productos deseados por el usuario, se hizo un hook, el cual tiene toda la lógica y el cual se puede utilizar en diferentes componentes, teniendo así un estado global en la app. También se puede implementar redux para un mejor manejo de estados globales y así conservar la arquitectura MVC, sin embargo, en este proyecto no se implementó por tiempo y se decidió realizar con hook.
+- Para manejar el estado de los productos deseados por el usuario, se hizo inicialmente un hook, el cual contenía toda la lógica y se podía utilizar en diferentes componentes, teniendo así un estado global en la app, sin embargo, no se actualizaba correctamente, por lo tanto, se utilizó useContext de react para tener el estado global. También se puede implementar redux para un mejor manejo de estados globales y así conservar la arquitectura MVC, sin embargo, en este proyecto no se implementó por tiempo y se decidió realizar con hook.
 - Se implementaron estilos de css básicos y se utilizaron componentes nativos de ionic para un mejor rendimiento y tener diseños responsive que se ajusten a diferentes pantallas.
